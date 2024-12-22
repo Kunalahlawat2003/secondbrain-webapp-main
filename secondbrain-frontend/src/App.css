@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 6px;  /* Change the width for vertical scrollbar */
+    height: 6px; /* Change the height for horizontal scrollbar */
+    transition:  2s ease;
+    display: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Customize thumb color */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Optional: track color */
+  }
+
+  .scrollable-container:hover::-webkit-scrollbar,
+.scrollable-container:focus::-webkit-scrollbar {
+  display: block;
+  transition:  2s ease;
+}
+
+body{
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background-color: #f5f5f4;
+}
